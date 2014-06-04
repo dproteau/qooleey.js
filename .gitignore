@@ -1,0 +1,8 @@
+# IDE stuff
+.idea
+
+# Package directories
+node_modules
+
+# Test Reports
+karma_html
