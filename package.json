@@ -1,22 +1,39 @@
 {
-  "private": true,
   "name": "qooleeyjs",
+  "version": "0.1.0",
   "description": "Javascript pubsub decorator implementation. Turns any Javasript object into a simple (but efficient) publishing source.",
-  "version": "0.1",
-  "author": "David Proteau <david.proteau@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "boilerplate",
-    "scaffold",
-    "template",
-    "skeleton",
-    "karma",
-    "mocha",
-    "chai",
-    "sinon",
-    "requirejs"
+  "homepage": "https://github.com/dproteau/qooleey.js",
+
+  "author": {
+    "name": "David Proteau",
+    "email": "david.proteau@gmail.com"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dproteau/qooleey.js.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/dproteau/qooleey.js/issues"
+  },
+
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dproteau/qooleey.js/blob/master/LICENSE.MIT"
+    }
   ],
+
+  "keywords": [
+    "pubsub",
+    "decorator",
+    "simple",
+    "efficient"
+  ],
+
   "dependencies": {},
+
   "devDependencies": {
     "karma": "latest",
     "karma-mocha": "latest",
@@ -29,13 +46,5 @@
     "requirejs": "~2.1.11",
     "karma-requirejs": "~0.2.1",
     "karma-phantomjs-launcher": "~0.1.4"
-  },
-  "homepage": "https://github.com/x2es/boilerplate-karma-mocha-chai-requirejs",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/x2es/boilerplate-karma-mocha-chai-requirejs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/x2es/boilerplate-karma-mocha-chai-requirejs/issues"
   }
 }

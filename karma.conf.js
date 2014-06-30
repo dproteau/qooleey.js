@@ -1,12 +1,6 @@
 // Karma configuration
 // Generated on Mon Dec 02 2013 18:46:27 GMT+0400 (MSK)
 
-// uncomment this for redefine mp3-reporter sound files
-// ====================================================
-// var path = require('path');
-// var karmaSoundDir = path.join(__dirname, 'karma_sound');
-// ====================================================
-
 module.exports = function(config) {
   config.set({
 
@@ -23,7 +17,7 @@ module.exports = function(config) {
       'node_modules/sinon/pkg/sinon.js',                    // sinon will be accessable from global context
       {pattern: 'node_modules/**/*.js', included: false},   // allow to load any *.js from node_modules by karma web-server
 
-      'test/test-main.js',
+      'test/test-main.js',                                  // entry point for testing with requirejs and the karma-runner
       {pattern: 'js/spec/*.js', included: false},
       {pattern: 'js/lib/**/*.js', included: false},
       {pattern: 'js/vendor/*.js', included: false},
@@ -39,20 +33,7 @@ module.exports = function(config) {
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress', 'mp3', 'html'],
-
-    // uncomment this for redefine mp3-reporter sound files
-    // ====================================================
-    // mp3Reporter: {
-    //   red:        path.join(karmaSoundDir, 'red.mp3'),
-    //   green:      path.join(karmaSoundDir, 'green.mp3'),
-
-    //   fail:       path.join(karmaSoundDir, 'fail.mp3'),
-    //   error:      path.join(karmaSoundDir, 'error.mp3'),
-    //   success:    path.join(karmaSoundDir, 'success.mp3'),
-    //   disconnect: path.join(karmaSoundDir, 'success.mp3'),
-    // },
-    // ====================================================
+    reporters: ['progress', 'html'],
 
     // web server port
     port: 9876,
