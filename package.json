@@ -5,6 +5,8 @@
   "description": "Javascript pubsub decorator implementation. Turns any Javasript object into a simple (but efficient) publishing source.",
   "homepage": "https://github.com/dproteau/qooleey.js",
 
+  "main": "./dist/qooleey.js",
+
   "author": {
     "name": "David Proteau",
     "email": "david.proteau@gmail.com"

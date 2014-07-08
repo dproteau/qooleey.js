@@ -1,4 +1,19 @@
-define([], function () {
+(function (root, decorator) {
+    'use strict';
+
+    // CommonJS
+    if (typeof exports === 'object' && module) {
+        module.exports = decorator;
+
+    // AMD
+    } else if (typeof define === 'function' && define.amd) {
+        define(decorator);
+
+    // Browser
+    } else {
+        root.qooleey = decorator;
+    }
+}(( typeof window === 'object' && window ) || this, function () {
     "use strict";
 
     /**
@@ -40,7 +55,7 @@ define([], function () {
                 i = 0;
             for (; i < len; i++) {
                 if (this.subscribers[i].id === id) {
-                    this.subscribers.splice(i,1);
+                    this.subscribers.splice(i, 1);
                     break;
                 }
             }
@@ -55,7 +70,7 @@ define([], function () {
          */
         extensionMethods.publish = function (what, sender, data) {
             var len = this.subscribers.length,
-                i=0;
+                i = 0;
             for (; i < len; i++) {
                 this.subscribers[i].handler.call(this.subscribers[i].subscriber, what, sender, data);
             }
@@ -98,4 +113,4 @@ define([], function () {
     })();
 
     return qooleey;
-});
+}));
