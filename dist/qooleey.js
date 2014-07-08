@@ -15,6 +15,7 @@ define([], function () {
         /**
          * Add a subscriber to the subscribers list.
          * Client has to pass in a handler function and itself as arguments.
+         *
          * @param {function} handler
          * @param {object} subscriber
          * @returns {number}
@@ -31,6 +32,7 @@ define([], function () {
 
         /**
          * Remove a subscriber from receiving notification
+         *
          * @param {number} id
          */
         extensionMethods.removeSubscriber = function (id) {
@@ -45,6 +47,7 @@ define([], function () {
         };
 
         /**
+         * Publish notification to subscribers
          *
          * @param what
          * @param sender
@@ -58,6 +61,12 @@ define([], function () {
             }
         };
 
+        /**
+         * Enables the publishing capability of an object
+         *
+         * @param {object} obj
+         * @param {string} autoPublishMethodName
+         */
         var makePublisher = function (obj, autoPublishMethodName) {
             var autoPublishMethod;
             if (!obj) return;

@@ -19,7 +19,7 @@
     specFiles = [];
     for (var file in window.__karma__.files) {
       if (window.__karma__.files.hasOwnProperty(file)) {
-        if (/.*\/js\/spec\/.+_spec\.js$/.test(file)) {
+        if (/.*\/test\/spec\/.+_spec\.js$/.test(file)) {
           specFiles.push(file);
         }
       }
@@ -31,7 +31,7 @@
 
       paths: {
         'chai': 'node_modules/chai/chai',
-        'qooleey': 'js/lib/qooleey'
+        'qooleey': 'dist/qooleey'
       },
 
       packages: [],

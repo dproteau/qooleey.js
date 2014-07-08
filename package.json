@@ -1,6 +1,7 @@
 {
   "name": "qooleeyjs",
   "version": "0.1.0",
+  "private": "true",
   "description": "Javascript pubsub decorator implementation. Turns any Javasript object into a simple (but efficient) publishing source.",
   "homepage": "https://github.com/dproteau/qooleey.js",
 

@@ -18,10 +18,10 @@ module.exports = function(config) {
       {pattern: 'node_modules/**/*.js', included: false},   // allow to load any *.js from node_modules by karma web-server
 
       'test/test-main.js',                                  // entry point for testing with requirejs and the karma-runner
-      {pattern: 'js/spec/*.js', included: false},
+      {pattern: 'dist/*.js', included: false},
       {pattern: 'js/lib/**/*.js', included: false},
       {pattern: 'js/vendor/*.js', included: false},
-      {pattern: 'test/*.js', included: false}
+      {pattern: 'test/**/*.js', included: false}
     ],
 
 
